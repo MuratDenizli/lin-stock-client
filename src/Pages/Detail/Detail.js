@@ -50,11 +50,11 @@ export default function Detail() {
                                     <div key={index}>
                                         {!elem.content.isVideo ? <img
                                             className="urun-resmi"
-                                            src={`https://lin-stock-app.herokuapp.com${elem.content.url}`}
+                                            src={elem.content.url}
                                             alt="ürün"
                                         />:
                                         <video controls playsInline autoPlay loop>
-                                            <source src={`https://lin-stock-app.herokuapp.com${elem.content.url}`} type="video/mp4"></source>
+                                            <source src={elem.content.url} type="video/mp4"></source>
                                         </video>
                                         }
                                     </div>
