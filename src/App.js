@@ -1,7 +1,9 @@
+import * as React from 'react';
 import './App.css';
 import Box from './Components/Box';
 import axios from 'axios';
-import { React, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+
 
 
 function App() {
