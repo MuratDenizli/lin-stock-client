@@ -30,7 +30,7 @@ function App() {
       <div className='layout'>
         <div className='box-list'>
           {homepageList.map((item) =>
-            <Box key={item.id} id={item.attributes.url} title={item.attributes.Baslik} />
+            <Box key={item.id} id={item.attributes.url} title={item.attributes.Baslik} imgurl={item.attributes.resim_url} />
           )}
         </div>
       </div>
