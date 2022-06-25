@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import './box.css';
 
-export default function Box({ title, id }) {
+export default function Box({ title, id, imgurl }) {
     return (
         <div className='box'>
             <Link to={`/detail/${id}/${title}`}>
