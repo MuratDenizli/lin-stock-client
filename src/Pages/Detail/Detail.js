@@ -53,7 +53,7 @@ export default function Detail() {
                                             src={elem.content.url}
                                             alt="ürün"
                                         />:
-                                        <video controls playsInline autoPlay loop>
+                                        <video controls playsInline autoPlay="0">
                                             <source src={elem.content.url} type="video/mp4"></source>
                                         </video>
                                         }
