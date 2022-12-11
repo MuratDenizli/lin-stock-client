@@ -54,7 +54,7 @@ export default function Detail() {
                                             alt="ürün"
                                         />:
                                         <video controls loop="false" muted controlsList='nodownload'>
-                                            <source src={elem.content.url} type="video/mp4"></source>
+                                            <source src={$elem.content.url`#t=0.1`} type="video/mp4"></source>
                                         </video>
                                         }
                                     </div>
