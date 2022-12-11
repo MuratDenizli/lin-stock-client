@@ -46,7 +46,8 @@ export default function Detail() {
                 {(detailData) && detailData.length > 0 ? detailData.map((item) => (
                     <div className="box" key={item.id}>
                             <Slider {...settings}>
-                                {item.attributes.resimler.map((elem, index) => (
+                                {item.attributes.resimler.map((elem, index) => {
+                                    return(
                                     <div key={index}>
                                         {!elem.content.isVideo ? <img
                                             className="urun-resmi"
@@ -54,11 +55,11 @@ export default function Detail() {
                                             alt="ürün"
                                         />:
                                         <video controls loop="false" muted controlsList='nodownload'>
-                                            <source src={$elem.content.url`#t=0.1`} type="video/mp4"></source>
+                                            <source src={elem.content.url+`#t=0.1`} type="video/mp4"></source>
                                         </video>
                                         }
                                     </div>
-                                ))}
+                                )})}
                             </Slider>
                         <h2>Ürün Adı: {item.attributes.adi}</h2>
                         <p>Fiyat: {item.attributes.fiyati}</p>
